@@ -15,4 +15,4 @@ text = remove_spec(rosalind_1h.readline())
 kd = remove_spec(rosalind_1h.readline())
 
 for word in freq_words_mismatches_rev(text, kd.split()[0], kd.split()[1]):
-	print word
+    print word

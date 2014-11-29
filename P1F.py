@@ -18,5 +18,5 @@ d = remove_spec(rosalind_1f.readline())
 P1F_answers = open('P1F_answers.txt', 'w')
 
 for pos in approx_patt_match(pattern, text, d):
-	P1F_answers.write(str(pos)+'\n')   
+    P1F_answers.write(str(pos)+'\n')   
 
