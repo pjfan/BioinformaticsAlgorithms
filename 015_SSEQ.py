@@ -7,17 +7,17 @@ Return: One collection of indices of s in which the symbols of t appear as a sub
 import FASTA_Reader
 
 def FindSubSequence(sequence, subsequence):
-	indices = []
-	currentIndex = 0
-	for subnuc in subsequence:
-		for i, nuc in enumerate(sequence[currentIndex:]):
-			if subnuc == nuc:
-				indices.append(currentIndex+i+1)
-				currentIndex += i+1
-				break
-			else:
-				continue
-	return indices
+    indices = []
+    currentIndex = 0
+    for subnuc in subsequence:
+        for i, nuc in enumerate(sequence[currentIndex:]):
+            if subnuc == nuc:
+                indices.append(currentIndex+i+1)
+                currentIndex += i+1
+                break
+            else:
+                continue
+    return indices
 
 RosalindFile = FASTA_Reader.FASTA_Reader('rosalind_sseq.txt')
 RosalindFile.process_file()
@@ -36,4 +36,4 @@ subsequence = FASTA_Dictionary[FASTA_Dictionary.keys()[0]]
 Answer = FindSubSequence(sequence,subsequence)
 
 for index in Answer:
-	print index
+    print index

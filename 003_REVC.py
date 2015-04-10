@@ -24,4 +24,3 @@ for line in RosalindFile:
     sequence = line
 
 print complementDNA(sequence)
-        
